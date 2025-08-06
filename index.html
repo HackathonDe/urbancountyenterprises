@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban County Enterprises - Your Trusted Partner for Quality Supplies</title>
+    <meta name="description" content="Urban County Enterprises provides reliable, high-quality products including food supplies, uniforms, stationery, examination services, and insurance solutions in Kenya.">
+    <meta name="keywords" content="Kenya supplies, Nairobi business services, food supply Kenya, school uniforms Nairobi, office stationery Kenya, examination services, insurance Kenya">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ========== GLOBAL STYLES ========== */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --text-color: #333;
+            --white: #fff;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --box-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            line-height: 1.7;
+            color: var(--text-color);
+            overflow-x: hidden;
+            background-color: var(--light-color);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 28px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--secondary-color);
+            border-color: var(--white);
+        }
+        
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: var(--primary-color);
+            position: relative;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background: var(--secondary-color);
+            margin: 15px auto 30px;
+            border-radius: 3px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+            line-height: 1.8;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* ========== FLOATING ACTION BUTTONS ========== */
+        .float-btn {
+            position: fixed;
+            z-index: 999;
+            transition: var(--transition);
+        }
+        
+        .back-to-top {
+            left: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--box-shadow);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: #c0392b;
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .whatsapp-btn {
+            right: 30px;
+            bottom: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        /* ========== HEADER SECTION ========== */
+        header {
+            background: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 15px 0;
+        }
+        
+        .header.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 70px;
+            transition: var(--transition);
+            max-width: 100%;
+        }
+        
+        .header.scrolled .logo img {
+            height: 60px;
+        }
+        
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.05rem;
+            color: var(--dark-color);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        nav ul li .btn {
+            padding: 10px 20px;
+            margin-left: 15px;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+        
+        .mobile-menu:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/homepage\ .jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 100px;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.3;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* ========== SERVICES SECTION ========== */
+        .services {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--light-color);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            text-align: center;
+            transform: translateY(20px);
+            opacity: 0;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--secondary-color);
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .service-card.animate {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px) !important;
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .service-card:hover::before {
+            height: 100%;
+            opacity: 0.1;
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon {
+            transform: rotate(15deg) scale(1.2);
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .service-link {
+            color: var(--secondary-color);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .service-link i {
+            margin-left: 5px;
+            transition: var(--transition);
+        }
+        
+        .service-link:hover {
+            color: #c0392b;
+        }
+        
+        .service-link:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* ========== ABOUT SECTION ========== */
+        .about {
+            background: var(--light-color);
+            position: relative;
+        }
+        
+        .about::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--white);
+            clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow-hover);
+            transform: translateX(-50px);
+            opacity: 0;
+            transition: all 0.6s ease;
+            position: relative;
+        }
+        
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 10px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        .about-img.animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+            border-radius: 10px;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            transform: translateX(50px);
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+        
+        .about-text.animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2.3rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .about-features {
+            margin-top: 30px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+        
+        .feature-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        .feature-text p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        
+        /* ========== STATS SECTION ========== */
+        .stats {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 100px 0;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .stats .section-title,
+        .stats .section-subtitle {
+            color: var(--white) !important;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            padding: 30px 20px;
+            background: rgba(236, 231, 231, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(231, 76, 60, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+        
+        .stat-text {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* ========== TESTIMONIALS SECTION ========== */
+        .testimonials {
+            background: var(--white);
+            padding: 100px 0;
+        }
+        
+        .testimonials-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-item {
+            background: var(--light-color);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            position: relative;
+        }
+        
+        .testimonial-item::before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 5rem;
+            color: var(--secondary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* ========== CLIENTS SECTION ========== */
+        .clients {
+            background: var(--light-color);
+            padding: 80px 0;
+        }
+        
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        .client-item {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .client-item:hover {
+            filter: grayscale(0);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .client-item img {
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            width: auto;
+        }
+        
+        /* ========== CONTACT SECTION ========== */
+        .contact {
+            background: var(--white);
+            position: relative;
+            padding-bottom: 100px;
+        }
+        
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--light-color);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            background: var(--light-color);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+        
+        .contact-info p {
+            margin-bottom: 25px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details ul li i {
+            margin-right: 15px;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(231, 76, 60, 0.1);
+            border-radius: 50%;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-5px);
+        }
+        
+        /* ========== FOOTER SECTION ========== */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 80px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: var(--white);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+            z-index: 0;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            color: var(--white);
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin-top: 15px;
+        }
+        
+        .footer-about p {
+            color: #bbb;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links ul li a {
+            color: #bbb;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+        
+        .footer-links ul li a i {
+            margin-right: 8px;
+            color: var(--secondary-color);
+        }
+        
+        .footer-contact ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            color: #bbb;
+        }
+        
+        .footer-contact ul li i {
+            margin-right: 15px;
+            color: var(--secondary-color);
+            margin-top: 3px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(248, 248, 248, 0.1);
+            color: #bbb;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* ========== POPUP MODAL STYLES ========== */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .popup-content {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            transform: scale(0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active .popup-content {
+            transform: scale(1);
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #777;
+            transition: var(--transition);
+        }
+        
+        .popup-close:hover {
+            color: var(--secondary-color);
+            transform: rotate(90deg);
+        }
+        
+        .popup-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .popup-content h4 {
+            font-size: 1.4rem;
+            margin: 20px 0 15px;
+            color: var(--primary-color);
+        }
+        
+        .popup-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .popup-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .popup-content ul li {
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        
+        .service-popup-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .service-popup-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .service-popup-section {
+            margin-bottom: 20px;
+        }
+        
+        .service-popup-btn {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* ========== QUOTE FORM STYLES ========== */
+        .quote-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-submit {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .form-submit .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+        }
+        
+        /* ========== LOADING OVERLAY STYLES ========== */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .loading-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .loading-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .success-message {
+            display: none;
+            color: #2ecc71;
+            margin-top: 15px;
+        }
+        
+        .error-message {
+            display: none;
+            color: #e74c3c;
+            margin-top: 15px;
+        }
+        
+        /* ========== RESPONSIVE STYLES ========== */
+        @media (max-width: 1200px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .about-img {
+                order: -1;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .section {
+                padding: 80px 0;
+            }
+            
+            .section-title {
+                font-size: 2.3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .service-popup-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 10px 0;
+            }
+            
+            nav {
+                position: fixed;
+                top: 100px;
+                left: -100%;
+                background: var(--white);
+                width: 280px;
+                height: calc(100vh - 100px);
+                box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                padding: 30px;
+                overflow-y: auto;
+            }
+            
+            nav.active {
+                left: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 0 0 25px 0;
+            }
+            
+            nav ul li a {
+                font-size: 1.1rem;
+            }
+            
+            nav ul li .btn {
+                margin-left: 0;
+                margin-top: 10px;
+                display: inline-block;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .back-to-top {
+                left: 20px;
+                bottom: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+            
+            .whatsapp-btn {
+                right: 20px;
+                bottom: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+            }
+            
+            .popup-content {
+                padding: 25px 15px;
+            }
+            
+            .contact-info {
+                padding: 30px 20px;
+            }
+            
+            .contact-details ul li {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                min-height: 600px;
+                padding-top: 80px;
+                background-attachment: scroll;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+            
+            .about-img::before {
+                display: none;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .testimonial-item {
+                padding: 30px 20px;
+            }
+            
+            .popup-content {
+                width: 95%;
+                padding: 20px 15px;
+            }
+            
+            .service-popup-img {
+                height: 180px;
+            }
+            
+            .feature-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .feature-icon {
+                margin-bottom: 10px;
+            }
+            
+            .author-img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .author-info h4 {
+                font-size: 1.1rem;
+            }
+            
+            .client-item img {
+                max-height: 60px;
+            }
+            
+            .contact-info h3 {
+                font-size: 1.5rem;
+            }
+            
+            .footer-col h3 {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .service-card {
+                padding: 30px 20px;
+            }
+            
+            .service-icon {
+                font-size: 2.8rem;
+            }
+            
+            .service-card h3 {
+                font-size: 1.4rem;
+            }
+            
+            .stat-number {
+                font-size: 2.8rem;
+            }
+            
+            .stat-text {
+                font-size: 1rem;
+            }
+            
+            .back-to-top {
+                left: 15px;
+                bottom: 15px;
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+            
+            .whatsapp-btn {
+                right: 15px;
+                bottom: 15px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* ========== ANIMATION CLASSES ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fadeInUp {
+            animation: fadeInUp 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== FLOATING ACTION BUTTONS ========== -->
+    <a href="#home" class="float-btn back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <a href="https://wa.me/254712244008" target="_blank" class="float-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== HEADER SECTION ========== -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="Urban County Enterprises Logo">
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn" id="quote-btn">Get Quote</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1>URBAN COUNTY ENTERPRISES</h1>
+                <h3>supplier of all institutional Food, Stationaries/ Exams, Uniforms and Insurance Services</h3>
+                <br>
+                <h3>OUR MOTTO</h3> 
+                <br>
+                <p>Working with institutions to keep their Vision and Misson Alive.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="#" class="btn btn-outline" id="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Comprehensive solutions tailored to meet your business needs with quality and reliability</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Supply</h3>
+                    <p>We provide high-quality ingredients and food products including meat, bread, cereals, milk, vegetables and more for institutions, restaurants, and businesses across Kenya.</p>
+                    <a href="#" class="service-link learn-more-service" data-service="food">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Uniforms Supply Services</h3>
+                    <p>Custom-designed, durable uniforms for schools, corporations, and service industries. We offer quality fabrics and professional tailoring services.</p>
+                    <a href="#" class="service-link learn-more-service" data-service="uniforms">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Stationery</h3>
+                    <p>Comprehensive office and school supplies, from basic stationery to customized corporate materials. We source quality products at competitive prices.</p>
+                    <a href="#" class="service-link learn-more-service" data-service="stationery">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Exams Services</h3>
+                    <p>We partner with top publishers to supply primary, secondary and college exams, including sign language, music, French and other specialized exams.</p>
+                    <a href="#" class="service-link learn-more-service" data-service="examination">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance Services</h3>
+                    <p>Customized insurance solutions including education insurance covers, pensions, and other financial products for businesses and individuals.</p>
+                    <a href="#" class="service-link learn-more-service" data-service="insurance">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="Images/logo.png" alt="Urban County Team">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2>About Urban County Enterprises</h2>
+                    <p>Founded with a commitment to excellence, Urban County Enterprises is Child and Insitutions Centric and has grown to become a trusted partner for businesses and institutions across Kenya. Our journey began with a simple mission: to provide reliable, high-quality supplies with exceptional service.</p>
+                    <p>Today, we serve a diverse clientele including educational institutions, corporate organizations, and hospitality businesses, offering comprehensive solutions tailored to their specific needs.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Quality Assurance</h4>
+                                <p>We source products from trusted suppliers and conduct rigorous quality checks.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Timely Delivery</h4>
+                                <p>Our efficient logistics ensure your orders arrive when you need them.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Customer Focus</h4>
+                                <p>We build long-term relationships by understanding and meeting your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION ========== -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Impact</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Numbers that showcase our growth and commitment to service</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-text">Satisfied Clients</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-text">Years of Experience</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-text">Products Delivered</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-text">% Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">What our clients say about our services</p>
+            
+            <div class="testimonials-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            "Urban County Enterprises has been our trusted supplier for school uniforms and stationery for the past 5 years. Their quality is consistently excellent, and their delivery is always on time. They understand the needs of educational institutions."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="Images/a.jpg" alt="Jane Mwangi">
+                            </div>
+                            <div class="author-info">
+                                <h4>Andrew Wakaba</h4>
+                                <p>Principal, Greenview Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            "The food supply service from Urban County has transformed our restaurant operations. We get fresh, high-quality ingredients delivered regularly at competitive prices. Their customer service is exceptional - always responsive to our needs."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="Images/b.jpg" alt="David Omondi">
+                            </div>
+                            <div class="author-info">
+                                <h4>David Omondi</h4>
+                                <p>Owner, Savannah Restaurant</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            "As a growing corporate office, we needed a reliable supplier for our stationery and office supplies. Urban County not only provides quality products but also offers customized solutions that have helped us streamline our procurement process."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img">
+                                <img src="Images/c.jpg" alt="Sarah Kamau">
+                            </div>
+                            <div class="author-info">
+                                <h4>James Wambugu</h4>
+                                <p>Office Manager, TechSolutions Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLIENTS SECTION ========== -->
+    <section class="section clients">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Clients</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Trusted by leading organizations across Kenya</p>
+            
+            <div class="clients-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="client-item">
+                    <img src="Images/e.png" alt="Client Logo">
+                </div>
+                <div class="client-item">
+                    <img src="Images/f.png" alt="Client Logo">
+                </div>
+                <div class="client-item">
+                    <img src="Images/g.png" alt="Client Logo">
+                </div>
+                <div class="client-item">
+                    <img src="Images/d.png" alt="Client Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Get in touch with our team for inquiries or quotes</p>
+            
+            <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>We're here to assist you with all your supply and service needs. Reach out to us through any of the following channels:</p>
+                    
+                    <div class="contact-details">
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>0711 534 170</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>0719 20 20 20</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>urbancountyenterprices@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <span><a href="https://wa.me/254711534170" target="_blank">Chat on WhatsApp</a></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Head Office, Kenyatta Market Of , Mbagathi Road, Oparating in 47 Counties</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col footer-about">
+                    <h3>Urban County</h3>
+                    <p>Your trusted partner for quality supplies and services in Kenya. We're committed to excellence in everything we do, from product quality to customer service.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" class="learn-more-service" data-service="food"><i class="fas fa-chevron-right"></i> Food Supply</a></li>
+                        <li><a href="#" class="learn-more-service" data-service="uniforms"><i class="fas fa-chevron-right"></i> Uniforms</a></li>
+                        <li><a href="#" class="learn-more-service" data-service="stationery"><i class="fas fa-chevron-right"></i> Stationery</a></li>
+                        <li><a href="#" class="learn-more-service" data-service="examination"><i class="fas fa-chevron-right"></i> Examination Services</a></li>
+                        <li><a href="#" class="learn-more-service" data-service="insurance"><i class="fas fa-chevron-right"></i> Insurance Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> 0711 534 170</li>
+                        <li><i class="fas fa-phone-alt"></i> 0719 20 20 20</li>
+                        <li><i class="fas fa-envelope"></i> urbancountyenterprices@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                       
+                    </ul>
+                     Payment Details : <br> Paybill : 247 247<br> Account Number : 0719 202020
+                        Account Name : URBAN COUNTY ENTERPRISES</Details>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Urban County Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MAIN POPUP MODAL ========== -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <h3>About Urban County Enterprises</h3>
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <p>Urban County Enterprises is a leading provider of business supplies and services in Kenya, dedicated to delivering quality products with exceptional customer service.</p>
+                    
+                    <h4>Our Core Services</h4>
+                    <ul>
+                        <li><strong>Food Supply:</strong> High-quality ingredients including meat, bread, cereals, milk and vegetables for institutions</li>
+                        <li><strong>Uniforms:</strong> Custom-designed for schools and corporations</li>
+                        <li><strong>Stationery:</strong> Comprehensive office and school supplies</li>
+                        <li><strong>Examination Services:</strong> Partnering with top publishers for primary, secondary and college exams including sign language, music, French and other specialized exams</li>
+                        <li><strong>Insurance Services:</strong> Customized coverage solutions including education insurance covers and pensions</li>
+                        <li><strong>Logistics:</strong> Reliable distribution across Kenya</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Why Choose Us?</h4>
+                    <ul>
+                        <li>4+ years of experience</li>
+                        <li>150+ satisfied clients</li>
+                        <li>Commitment to quality</li>
+                        <li>Competitive pricing</li>
+                        <li>Timely delivery</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== QUOTE REQUEST POPUP ========== -->
+    <div class="popup-overlay" id="quote-popup">
+        <div class="popup-content">
+            <span class="popup-close" id="quote-popup-close">&times;</span>
+            <h3>Request a Quote</h3>
+            <p>Fill out the form below and we'll get back to you with a customized quote</p>
+            
+            <form id="quote-form" class="quote-form">
+                <div class="form-group">
+                    <label for="quote-name">Full Name*</label>
+                    <input type="text" id="quote-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quote-email">Email Address*</label>
+                    <input type="email" id="quote-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quote-phone">Phone Number*</label>
+                    <input type="tel" id="quote-phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quote-service">Service Interested In*</label>
+                    <select id="quote-service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Food Supply">Food Supply</option>
+                        <option value="Uniforms">Uniforms</option>
+                        <option value="Stationery">Stationery</option>
+                        <option value="Examination Services">Examination Services</option>
+                        <option value="Insurance Services">Insurance Services</option>
+                        <option value="Multiple Services">Multiple Services</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quote-description">Item Description*</label>
+                    <textarea id="quote-description" name="description" required placeholder="Please describe the items or services you're interested in, including quantities, sizes, specifications, etc."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quote-deadline">Required Delivery Date (if applicable)</label>
+                    <input type="date" id="quote-deadline" name="deadline">
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn">Request Quote</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== LOADING OVERLAY ========== -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Sending Quote...</h3>
+            <p class="success-message" id="success-message">
+                <i class="fas fa-check-circle"></i> Quote sent successfully!
+            </p>
+            <p class="error-message" id="error-message">
+                <i class="fas fa-exclamation-circle"></i> Error sending quote. Please try again.
+            </p>
+        </div>
+    </div>
+
+    <!-- ========== SERVICE POPUP MODALS ========== -->
+    <!-- Food Supply Popup -->
+    <div class="popup-overlay service-popup" id="food-popup">
+        <div class="popup-content">
+            <span class="popup-close service-popup-close">&times;</span>
+            <h3>FOOD AND SUPPLY</h3>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Food Supply" class="service-popup-img">
+            
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <p>We provide comprehensive food supply solutions to restaurants, schools, hospitals, and other institutions across Kenya, offering a wide range of high-quality food products.</p>
+                    
+                    <h4>Our Food Products</h4>
+                    <ul>
+                        <li><strong>Meat:</strong> Quality beef, chicken, pork and other meats from certified suppliers</li>
+                        <li><strong>Bread & Confectionaries:</strong> Fresh bread and baked goods delivered daily</li>
+                        <li><strong>Cereals & Grains:</strong> Rice, maize flour, wheat flour and other staple foods</li>
+                        <li><strong>Dairy Products:</strong> Milk, cheese, butter and other dairy items</li>
+                        <li><strong>Fresh Vegetables:</strong> Locally sourced fresh vegetables</li>
+                        <li><strong>Beverages:</strong> Juices, water, and other drinks</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Key Benefits</h4>
+                    <ul>
+                        <li>Reliable supply chain with fresh products</li>
+                        <li>Strict quality control and hygiene standards</li>
+                        <li>Competitive pricing with volume discounts</li>
+                        <li>Customized orders based on your requirements</li>
+                        <li>Scheduled deliveries to ensure freshness</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uniforms Popup -->
+    <div class="popup-overlay service-popup" id="uniforms-popup">
+        <div class="popup-content">
+            <span class="popup-close service-popup-close">&times;</span>
+            <h3>UNIFORM SUPPLY SERVICES</h3>
+            
+            <!-- Slideshow container -->
+            <div class="service-slideshow">
+                <!-- Full-width images with caption text -->
+                <div class="service-slide fade">
+                    <img src="Images/uniform.jpg" alt="Uniforms" class="service-popup-img">
+                </div>
+                
+                <div class="service-slide fade">
+                    <img src="Images/chef.jpg" alt="Chef Uniforms" class="service-popup-img">
+                </div>
+                
+                <div class="service-slide fade">
+                    <img src="Images/hospital.jpg" alt="Hospital Uniforms" class="service-popup-img">
+                </div>
+                
+                <div class="service-slide fade">
+                    <img src="Images/track.jpg" alt="Track Suits" class="service-popup-img">
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <!-- The dots/circles -->
+                <div class="slideshow-dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+            
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <b2><p>All Shades and all designs Available Upon Request<br>We provide high-quality, durable uniforms for schools, corporate organizations, and service industries across Kenya.</p></b2>
+                    
+                    <h4>Our Offerings</h4>
+                    <ul>
+                        <li>School uniforms with custom embroidery</li>
+                        <li>Corporate wear including shirts and suits</li>
+                        <li>Industrial and protective workwear</li>
+                        <li>Hospitality uniforms</li>
+                        <li>Security personnel attire</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Key Benefits</h4>
+                    <ul>
+                        <li>Durable, comfortable fabrics</li>
+                        <li>Custom designs for brand identity</li>
+                        <li>Professional tailoring services</li>
+                        <li>Bulk order discounts</li>
+                        <li>Timely nationwide delivery</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stationery Popup -->
+    <div class="popup-overlay service-popup" id="stationery-popup">
+        <div class="popup-content">
+            <span class="popup-close service-popup-close">&times;</span>
+            <h3>STATIONARY SERVICES</h3>
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Stationery" class="service-popup-img">
+            
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <p>We offer comprehensive stationery solutions for offices, schools and businesses of all sizes throughout Kenya both plain and 
+                        branded
+                    </p>
+                    
+                    <h4>Our Offerings</h4>
+                    <ul>
+                        <li>Office supplies: pens, paper, notebooks</li>
+                        <li>School stationery: exercise books, pencils</li>
+                        <li>Custom printed materials</li>
+                        <li>Computer and printer supplies</li>
+                        <li>Presentation materials</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Key Benefits</h4>
+                    <ul>
+                        <li>One-stop shop convenience</li>
+                        <li>Bulk purchasing discounts</li>
+                        <li>Custom branding options</li>
+                        <li>Reliable scheduled deliveries</li>
+                        <li>Quality assurance guarantee</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Examination Services Popup -->
+    <div class="popup-overlay service-popup" id="examination-popup">
+        <div class="popup-content">
+            <span class="popup-close service-popup-close">&times;</span>
+            <h3>EXAMS SUPPLY SERVICES</h3>
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Examination Services" class="service-popup-img">
+            
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <p>We provide end-to-end exams supply Services to educational institutions, partnering with the best publishers in our Nation to supply comprehensive exam materials across Kenya.</p>
+                    
+                    <h4>Our Examination Services</h4>
+                    <ul>
+                        <li><strong>Primary & Secondary Exams:</strong> Comprehensive exam papers from top publishers</li>
+                        <li><strong>College Exams:</strong> Specialized examination materials for higher education</li>
+                        <li><strong>Specialized Exams:</strong> Including sign language, music, French and other language exams</li>
+                        <li><strong>Exam Printing:</strong> High-quality printing of examination papers</li>
+                        <li><strong>Secure Packaging:</strong> Confidential handling of all exam materials</li>
+                        <li><strong>Logistics:</strong> Reliable delivery to your institution</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Key Benefits</h4>
+                    <ul>
+                        <li>Partnerships with leading publishers</li>
+                        <li>Complete confidentiality and security</li>
+                        <li>Wide range of exam types available</li>
+                        <li>Timely delivery to meet your schedule</li>
+                        <li>Professional handling of all materials</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insurance Services Popup -->
+    <div class="popup-overlay service-popup" id="insurance-popup">
+        <div class="popup-content">
+            <span class="popup-close service-popup-close">&times;</span>
+            <h3>INSURANCE SERVICES</h3>
+            <img src="Images/insurance.png" alt="Insurance Services" class="service-popup-img">
+            
+            <div class="service-popup-content">
+                <div class="service-popup-section">
+                    <p>The CEO and Founder of Urban County Enterprices , Brother Paul, has been 
+                        offering insurance Services for both individuals and Corporates for Many years thus saw it good to include it in his Company, we offer customized insurance solutions for individuals  and  businesses, with special focus on education insurance covers and pension solutions.</p>
+                    
+                    <h4>Our Insurance Products</h4>
+                    <ul>
+                        <li><strong>Education Insurance:</strong> Comprehensive covers for schools and students</li>
+                        <li><strong>Pension Plans:</strong> Retirement solutions for individuals and organizations</li>
+                        <li><strong>Business Insurance:</strong> Comprehensive packages for companies</li>
+                        <li><strong>Vehicle Insurance:</strong> Coverage for personal and fleet vehicles</li>
+                        <li><strong>Health Insurance:</strong> Medical plans for individuals and groups</li>
+                        <li><strong>Life Insurance:</strong> Protection for you and your family</li>
+                    </ul>
+                </div>
+                
+                <div class="service-popup-section">
+                    <h4>Key Benefits</h4>
+                    <ul>
+                        <li>Tailored policy solutions</li>
+                        <li>Competitive premium rates</li>
+                        <li>Expert risk management advice</li>
+                        <li>Efficient claims processing</li>
+                        <li>Regular policy reviews</li>
+                    </ul>
+                    
+                    <div class="service-popup-btn">
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // ========== INITIALIZE AOS (ANIMATE ON SCROLL) ==========
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // ========== MOBILE MENU TOGGLE ==========
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.getElementById('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenu.innerHTML = nav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : 'auto';
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // ========== SMOOTH SCROLLING FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            // Don't prevent default for the Learn More button
+            if (!anchor.classList.contains('learn-more-service')) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+        
+        // ========== HEADER SCROLL EFFECT ==========
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // ========== BACK TO TOP BUTTON ==========
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        // ========== COUNTER ANIMATION ==========
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Start counters when stats section is in view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+        
+        // ========== CURRENT YEAR IN FOOTER ==========
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // ========== SERVICE CARD ANIMATION ON SCROLL ==========
+        const serviceCards = document.querySelectorAll('.service-card');
+        
+        function animateServiceCards() {
+            serviceCards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (cardPosition < screenPosition) {
+                    card.classList.add('animate');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateServiceCards);
+        animateServiceCards(); // Run once on page load
+        
+        // ========== ABOUT SECTION ANIMATION ON SCROLL ==========
+        const aboutImg = document.querySelector('.about-img');
+        const aboutText = document.querySelector('.about-text');
+        
+        function animateOnScroll() {
+            // About section
+            const aboutImgPosition = aboutImg.getBoundingClientRect().top;
+            const aboutTextPosition = aboutText.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (aboutImgPosition < screenPosition) {
+                aboutImg.classList.add('animate');
+            }
+            
+            if (aboutTextPosition < screenPosition) {
+                aboutText.classList.add('animate');
+            }
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on page load
+        
+        // ========== POPUP MODAL FUNCTIONALITY ==========
+        const learnMoreBtn = document.getElementById('learn-more-btn');
+        const popupOverlay = document.getElementById('popup-overlay');
+        const popupClose = document.getElementById('popup-close');
+        
+        // Show popup when Learn More button is clicked
+        learnMoreBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Close popup when X button is clicked
+        popupClose.addEventListener('click', () => {
+            popupOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close popup when clicking outside the content
+        popupOverlay.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) {
+                popupOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Close popup when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
+                popupOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // ========== SERVICE POPUPS FUNCTIONALITY ==========
+        const serviceLinks = document.querySelectorAll('.learn-more-service');
+        const servicePopups = document.querySelectorAll('.service-popup');
+        const serviceCloseBtns = document.querySelectorAll('.service-popup-close');
+        
+        // Show service popup when Learn More is clicked
+        serviceLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const serviceType = link.getAttribute('data-service');
+                document.getElementById(`${serviceType}-popup`).classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close service popups
+        serviceCloseBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.closest('.service-popup').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Close service popups when clicking outside
+        servicePopups.forEach(popup => {
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Close service popups with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                servicePopups.forEach(popup => {
+                    if (popup.classList.contains('active')) {
+                        popup.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+        
+        // ========== QUOTE POPUP FUNCTIONALITY ==========
+        const quoteBtn = document.getElementById('quote-btn');
+        const quotePopup = document.getElementById('quote-popup');
+        const quoteCloseBtn = document.getElementById('quote-popup-close');
+        const quoteForm = document.getElementById('quote-form');
+        
+        // Show quote popup when Get Quote button is clicked
+        quoteBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            quotePopup.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Close quote popup when X button is clicked
+        quoteCloseBtn.addEventListener('click', () => {
+            quotePopup.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close quote popup when clicking outside
+        quotePopup.addEventListener('click', (e) => {
+            if (e.target === quotePopup) {
+                quotePopup.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Close quote popup with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && quotePopup.classList.contains('active')) {
+                quotePopup.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // ========== QUOTE FORM SUBMISSION TO WHATSAPP ==========
+        const loadingOverlay = document.getElementById('loading-overlay');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show loading overlay
+            loadingOverlay.classList.add('active');
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Get form values
+            const name = document.getElementById('quote-name').value;
+            const email = document.getElementById('quote-email').value;
+            const phone = document.getElementById('quote-phone').value;
+            const service = document.getElementById('quote-service').value;
+            const description = document.getElementById('quote-description').value;
+            const deadline = document.getElementById('quote-deadline').value;
+            
+            // Format the message for WhatsApp
+            const whatsappMessage = `New Quote Request:\n\n` +
+                                  `Name: ${name}\n` +
+                                  `Email: ${email}\n` +
+                                  `Phone: ${phone}\n` +
+                                  `Service: ${service}\n` +
+                                  `Description: ${description}\n` +
+                                  `Deadline: ${deadline || 'Not specified'}`;
+            
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // WhatsApp number (with country code but no + or 0)
+            const whatsappNumber = '254711534170';
+            
+            // Create WhatsApp link
+            const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Simulate sending delay (remove this in production)
+            setTimeout(() => {
+                // Open WhatsApp in a new tab
+                const newWindow = window.open(whatsappLink, '_blank');
+                
+                if (newWindow) {
+                    // Show success message
+                    successMessage.style.display = 'block';
+                    
+                    // Close the loading overlay after 2 seconds
+                    setTimeout(() => {
+                        loadingOverlay.classList.remove('active');
+                        quoteForm.reset();
+                        document.getElementById('quote-popup').classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }, 2000);
+                } else {
+                    // Show error message if window couldn't be opened
+                    errorMessage.style.display = 'block';
+                    setTimeout(() => {
+                        loadingOverlay.classList.remove('active');
+                    }, 2000);
+                }
+            }, 1500); // Simulate network delay (remove in production)
+        });
+
+        // ========== UNIFORMS SLIDESHOW FUNCTIONALITY ==========
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("service-slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        
+        // Auto-advance slides every 5 seconds
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
+    </script>
+</body>
+</html>
